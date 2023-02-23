@@ -34,7 +34,7 @@ export default class menu extends Phaser.Scene{
         this.datos.addListener('click');
 
         //el texto que dice "Por favor, ingrese valores válidos."
-        this.warn = this.add.text(150,10,'Por favor, ingrese valores válidos.',{color:'white', fontSize:'20px'}).setVisible(false).setScrollFactor(0);
+        this.warn = this.add.text(150,10,'Por favor, ingrese valores válidos.',{color:'black', backgroundColor:'white', fontSize:'20px'}).setVisible(false).setScrollFactor(0);
         
         //aqui se crea la wea que mostrará los resultados
         this.resul = this.add.dom(780,0).createFromCache('resul').setScrollFactor(0);
